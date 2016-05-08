@@ -1,0 +1,46 @@
+
+
+Fork this repo to your Github account; create new file named “Final-Lastname.pde” 
+(using your last name instead of “Lastname”).
+Copy your Project5 code into this file, then modify it to meet these requirements.
+
+	1.	Modify your “Person” class, as follows:
+	a)	Add a new integer property called age (in years, only).
+	b)	Add a new integer property called salary (in whole dollars, only).
+	⁃	age:  initialize with a random number from 1 to 99
+	⁃	salary:  random 1,000 to 100,000 if age is 18 or over; zero for < 18.
+	c)	Change the show() method to display age & salary (after a $ dollar-sign).
+	d)	Add at least two new constructors, with different numbers of arguments.
+	e)	Add a method raise( float pct ) to increase the salary by pct % (percent).
+	f)	Add method bonus( int ant ) to increase salary by $ amt (if age>=18).
+
+	2.	Create a new array of “Person” objects.
+	a.	The array name should begin with the first 3 letters of your first-name.
+	b.	The array should contain exactly eleven Person objects.
+	c.	Construct each Person object with different values for its properties.
+	d.	Compute and display average salary (age >= 18 only) for each array.
+
+	3.	Change the screen size to 750 (width) by 550 (height).
+	a.	All features should display properly for any reasonable width or height. 
+	b.	Display your first-name and last-name somewhere on the screen.
+	c.	Change the scene to indicate which array is being displayed.
+	⁃	Light blue background, with a yellow sun in the sky, for old array.
+	⁃	Change to a darker sky and a full moon, for new array.
+	d.	Blades of “grass” along bottom of screen (green lines, evenly-spaced) 
+	⁃	Grass leans LEFT when old array is shown; RIGHT for new array
+
+	4.	Add some buttons and display them on the screen.
+
+	a.	“Raise” button:  give everybody (in both arrays) a raise, as follows:
+	⁃	If the salary is under 25,000 then give a 20% raise.
+.	⁃	If the salary is between 25,000 and 50,000 then give a 15% raise.
+	⁃	If the salary is between 50,000 and 75,000 then give a 10% raise.
+	⁃	If the salary is over 75,000 then give a 5% raise.
+
+	b.	“Bonus” button: everybody (both arrays) gets $ 1000 bonus (if age>=18).
+
+	c.	“Change” button:  display the new array instead of old, when clicked; resume displaying old array if it is clicked again.  
+		(Show new array for odd number of clicks; old array for even.)
+
+	d.	Add some keyPressed() code:.  ‘1’ key for Change, ‘2’ key for Raise
+	⁃	‘r’ key to reset both arrays with (random) values; ‘q’ to quit.
